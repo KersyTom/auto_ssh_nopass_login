@@ -37,5 +37,5 @@
 1. 用户通过参数或交互输入服务器 IP、用户名和密码。
 2. 脚本自动检测本地 SSH 配置文件（`~/.ssh/config`）与待新增数据。
 3. 根据检测结果决定生成SSH 密钥对（公钥和私钥），并按服务器 IP 分类存放，方便管理。
-4. 私钥将保存在%USERPROFILE%\ssh_keygen\%SERVER_IP%下，并自动更新至%USERPROFILE%\.ssh\config中，公钥将自动追加道服务器的~/.ssh/authorized_keys中，确保免密登录生效。
+4. 私钥将保存在（`%USERPROFILE%/ssh_keygen/%SERVER_IP%`）下，并自动更新至(`%USERPROFILE%/.ssh/config`)中，公钥将自动追加道服务器的(`~/.ssh/authorized_keys`)中，确保免密登录生效。
 5. 一次配置后，支持所有使用（`~/.ssh/config`）配置 SSH 的终端工具都可直接免密登录，无需重复输入密码。
